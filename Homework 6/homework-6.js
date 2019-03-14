@@ -57,3 +57,21 @@ var hall05 = {
 
 //the array
 halls = [hall01, hall02, hall03, hall04, hall05];
+
+//functions
+//1. "add" function 
+var hallName = name
+
+var hall06 = {
+  id: 6,
+  name: hallName,
+  reservation: {
+      isReserved: false,
+      reservedFrom: null,
+      reservedUntil: null,
+  }
+}
+
+function addHall (hallName) {
+  halls.push(hall06);
+}
