@@ -75,3 +75,12 @@ var hall06 = {
 function addHall (hallName) {
   halls.push(hall06);
 }
+
+//2. "remove" function
+function removeId (halls, id) {
+    for (var i = halls.length - 1; i > -1; i--) {
+      if (halls[i].id === id) {
+        halls.splice(i, 1);
+      } ;
+  }
+  }
