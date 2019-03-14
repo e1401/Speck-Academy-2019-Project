@@ -84,3 +84,14 @@ function removeId (halls, id) {
       } ;
   }
   }
+
+  //3. "reservation" function
+  function reservation(id, reservedFrom, reservedUntil) {
+    for (var i = 0; i < halls.length; i++) {
+      if (halls[i].id === id) {
+        halls[i].reservation.isReserved = true; 
+  
+        
+      }
+    }
+  }
