@@ -1,0 +1,60 @@
+/* Mobile laout */
+
+@media only screen and (max-width: 600px) {
+   h1 {
+        font-size: 10px;
+    }
+    
+    body {
+      background-color: lightblue;
+    }
+    .grid-layout {
+        display: grid;
+        grid-template-rows: 70%, 30%);
+        grid-template-columns: 10% 80% 10%;
+        grid-template: 
+        grid-gap: 5px;
+        
+    }
+    .hall {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+      
+    }
+
+    .hall_photo {
+        border: 3px solid greenyellow;
+        text-align: center;
+
+    }
+
+
+   img {
+        width: 240px;
+        height: 160px;
+        border: 1px solid red;
+        position: ;
+    }
+
+    .hall_caption {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 32;
+        text-align: center;
+    }
+
+
+    .hall_info {
+        font-size: 1em;
+    }
+
+    .fit {
+        object-fit: cover;
+        overflow: none;
+    }
+
+
+}
