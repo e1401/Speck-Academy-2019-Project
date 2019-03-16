@@ -9,6 +9,7 @@
         grid-template-rows: 30%, 30%);
         grid-template-columns: 10% 80% 10%;
         grid-gap: 5px;
+        padding: 24px;
     }
 
     .header_title {
@@ -57,7 +58,7 @@
     }
 
     .hall_photo {
-        border: 3px solid greenyellow;
+        
         text-align: center;
 
     }
@@ -66,7 +67,7 @@
    img {
         width: 240px;
         height: 160px;
-        border: 1px solid red;
+        
         
     }
 
@@ -97,8 +98,7 @@
 
 
 /* Desktop layout */
-@media screen and (min-width: 992px) {
-    /* Header layout start */
+@media screen and (min-width: 920px) {
 
     .header_grid {
         display: grid;
@@ -149,6 +149,7 @@
     grid-template-columns: repeat(4, auto);
     grid-gap: 15px;
     grid-auto-rows: minmax(120px, auto);
+    
 }
 
 
@@ -202,15 +203,31 @@ img {
     overflow: none;
 }
 
+.footer {
+    font-family: Helvetica, sans-serif;
+    font-size:  0.9em;
+    font-weight: 100;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    height: 100px;
+    background-color: #333;
+  }
+
   
+
+
+
+
+
 }
+    /* Header layout start */
+
 
 
 
 
 /* Desktop main grid layout end */
-
-
 
 
 
