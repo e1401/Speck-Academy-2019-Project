@@ -1,18 +1,48 @@
 /* Mobile laout */
 
 @media only screen and (max-width: 600px) {
-   h1 {
-        font-size: 10px;
-    }
     
-    body {
-      background-color: lightblue;
+  
+/* Header layout start */
+    .header_grid {
+        display: grid;
+        grid-template-rows: 30%, 30%);
+        grid-template-columns: 10% 80% 10%;
+        grid-gap: 5px;
     }
+
+    .header_title {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end:2;
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+        font-size: 1em;
+    }
+
+    .header_elements {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+   
+    }
+
+    ul {
+        list-style-type: none;
+        font-family: Helvetica, sans-serif;
+        font-size: 1.1em;
+        line-height: 1.9em
+    }
+      
+
+/* Header layout end */
+
     .grid-layout {
         display: grid;
-        grid-template-rows: 70%, 30%);
+        grid-template-rows: 70%, 30%;
         grid-template-columns: 10% 80% 10%;
-        grid-template: 
         grid-gap: 5px;
         
     }
@@ -35,22 +65,24 @@
         width: 240px;
         height: 160px;
         border: 1px solid red;
-        position: ;
+        
     }
 
     .hall_caption {
         grid-column-start: 2;
         grid-column-end: 2;
         grid-row-start: 2;
-        grid-row-end: 32;
+        grid-row-end: 2;
         text-align: center;
     }
 
 
     .hall_info {
-        font-size: 1em;
+        font-family: Helvetica, sans-serif;
+        font-size:  .9em;
     }
 
+    /* For images to fit into container without loosing aspect ratio */
     .fit {
         object-fit: cover;
         overflow: none;
@@ -58,3 +90,59 @@
 
 
 }
+
+
+
+/* Desktop layout */
+@media screen and (min-width: 992px) {
+  
+/* Header layout start */
+
+.header_grid {
+    display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-gap: 5px;
+        padding: 24px;
+   
+}
+
+.header_title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.header_elements {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: right;
+
+}
+
+    ul {
+        list-style-type: none;
+        
+        font-family: Helvetica, sans-serif;
+        font-size: 1.1em;
+        line-height: 1.9em
+    }
+
+    ul li {
+        display: inline;
+    }
+}
+/* Header layout end */
+
+
+
+
+
+    
+    
+    
