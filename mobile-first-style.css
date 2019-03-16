@@ -26,6 +26,7 @@
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
+        
    
     }
 
@@ -39,6 +40,7 @@
 
 /* Header layout end */
 
+/* Mobile main layout start */
     .grid-layout {
         display: grid;
         grid-template-rows: 70%, 30%;
@@ -88,56 +90,126 @@
         overflow: none;
     }
 
-
 }
+
+/* Mobile main grid layout end */
 
 
 
 /* Desktop layout */
 @media screen and (min-width: 992px) {
-  
-/* Header layout start */
+    /* Header layout start */
 
-.header_grid {
-    display: grid;
-        grid-template-rows: 100%;
-        grid-template-columns: 10% 40% 40% 10%;
-        grid-gap: 5px;
-        padding: 24px;
-   
-}
+    .header_grid {
+        display: grid;
+            grid-template-rows: 100%;
+            grid-template-columns: 5% 45% 45% 5%;
+            grid-gap: 5px;
+            padding: 24px;
+    
+    }
 
-.header_title {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    text-align: left;
-    font-family: Helvetica, sans-serif;
-    font-size: 1em;
-}
-
-.header_elements {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    text-align: right;
-
-}
-
-    ul {
-        list-style-type: none;
-        
+    .header_title {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        text-align: left;
         font-family: Helvetica, sans-serif;
-        font-size: 1.1em;
-        line-height: 1.9em
+        font-size: 1em;
     }
 
-    ul li {
-        display: inline;
+    .header_elements {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        text-align: right;
+
     }
-}
+
+        ul {
+            list-style-type: none;
+            
+            font-family: Helvetica, sans-serif;
+            font-size: 1.1em;
+            line-height: 1.9em
+        }
+
+        ul li {
+            display: inline;
+            margin: 8px;
+        }
+    
 /* Header layout end */
+
+/* Desktop main grid layout start */
+
+.desktop_layout {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(120px, auto);
+}
+
+
+/* .grid-layout {
+    display: grid;
+        grid-template-rows: 70%, 30%;
+        grid-template-columns: 10% 80% 10%;
+        grid-gap: 5px; */
+    
+}
+/* .hall {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: 2;
+    grid-row-end: auto;
+  
+} */
+
+.hall_photo {
+    
+    text-align: center;
+
+}
+
+
+img {
+    width: 240px;
+    height: 160px;
+    
+    
+}
+
+/* .hall_caption {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+} */
+
+
+.hall_info {
+    font-family: Helvetica, sans-serif;
+    font-size:  .9em;
+    text-align: center;
+}
+
+/* For images to fit into container without loosing aspect ratio */
+.fit {
+    object-fit: cover;
+    overflow: none;
+}
+
+  
+}
+
+
+
+
+/* Desktop main grid layout end */
+
 
 
 
