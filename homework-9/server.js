@@ -1,3 +1,58 @@
+// array of halls
+
+var halls = []
+
+halls[0] = {
+    id: 0,
+    name: "Velika sportska dvorana",
+    reservation: {
+        isReserved: true,
+        reservedFrom: null,
+        reservedUntil: null,
+    }
+}
+
+halls[1] = {
+    id: 1,
+    name: "Dvorana Hrvatskog doma",
+    reservation: {
+        isReserved: true,
+        reservedFrom: null,
+        reservedUntil: null,
+    }
+}
+
+halls[2] = {
+    id: 2,
+    name: "Dvorana Gradske knjižnice",
+    reservation: {
+        isReserved: true,
+        reservedFrom: null,
+        reservedUntil: null,
+    }
+}
+
+halls[3] = {
+    id: 3,
+    name: "Dvorana TIC",
+    reservation: {
+        isReserved: false,
+        reservedFrom: null,
+        reservedUntil: null,
+    }
+}
+
+halls[4] = {
+    id: 4,
+    name: "Konferencijske dvorane RCTP",
+    reservation: {
+        isReserved: false,
+        reservedFrom: null,
+        reservedUntil: null,
+    }
+}
+
+
 // server
 
 var http = require("http");
