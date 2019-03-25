@@ -63,6 +63,9 @@ function getFields(input, field) {
 
 var result = getFields(halls, "name");
 
+//create string with hall names separated by a comma
+
+var hallsToString = result.join(", ");
 
 // server
 
@@ -71,7 +74,7 @@ var http = require("http");
 http.createServer(function (request, response) {
     response.writeHead(200, {'Content-Type': 'text/plain'});
 
-    response.end("Hello World");
+    response.end(hallsToString);
 }).listen(8081);
 
 console.log('Server running at http://127.0.0.1:8081/');
