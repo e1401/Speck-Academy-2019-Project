@@ -52,6 +52,17 @@ halls[4] = {
     }
 }
 
+// array of onlly names
+
+function getFields(input, field) {
+    var output = [];
+    for (var i=0; i < input.length ; ++i)
+        output.push(input[i][field]);
+    return output;
+}
+
+var result = getFields(halls, "name");
+
 
 // server
 
